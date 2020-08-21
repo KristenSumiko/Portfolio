@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(217, 248, 217);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(3, 99, 3);
+}
+
+.hero section {
+    margin: 0 15px;
+}
+
+header, .headline, #myImage {
+    text-align: center;
+}
+
+header {
+    background-color: whitesmoke;
+    padding-top: 5px;
+    color: rgb(90, 187, 90);
+    border-bottom: 3px solid rgb(22, 235, 22);
+}
+
+.contact {
+    margin-bottom: 2px;
+}
+
+.contact img {
+    margin: 0;
+    height: 25px;
+}
+
+.headline {
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.headline p {
+    margin-bottom: 15px;
+}
+
+h1 {
+    margin: 5px;
+    padding: 0;
+}
+
+.desktop {
+    display:none;
+}
+
+h3, .links, .languages {
+    padding: 2px 15px;
+    margin: 0;
+}
+
+h2 {
+    padding: 15px;
+    margin: 0;
+    color: rgb(90, 187, 90);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+}
+
+.screenshots {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 15px;
+    max-width: 650px;
+    height: auto;
+    text-align: center;
+}
+
+.screenshots div {
+    flex: 1;
+}
+
+.screenshots img {
+    max-width: 100%;
+}
+
+.myImage {
+    border-radius: 50%;
+    margin: 15px;
+    max-width: 275px;
+    border: 3px solid rgb(22, 235, 22);
+}
+
+li {
+    display: inline-block;
+}
+
+.myBio p {
+    margin: 15px;
+}
+
+.description {
+    padding: 2px 15px 5px 15px;
+    margin: 0;
+}
+
+.headline p{
+    padding: 0;
+}
+
+.headline p, .myBio p {
+    color: rgb(3, 99, 3);
+}
+
+.languages {
+    padding: 0 15px 3px;
+    font-size: 0;
+}
+.languages li {
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: rgb(90, 187, 90);
+    padding: 3px 5px;
+    margin: 0;
+    font-size: 12px;
+
+}
+
+.scroll a, .links a {
+    color: rgb(22, 235, 22);
+}
+
+a:hover {
+    text-shadow: 3px 3px 3px rgb(160, 233, 229);
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links li:first-child::after {
+    content: "|";
+    margin-left: 5px;
+}
+
+#myProjects {
+    background-color:whitesmoke;
+    padding-bottom: 15px;
+}
+
+@media screen and (min-width: 600px) {
+    .hero section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    #aboutMe, .aboutProject {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .headline p{
+        margin-bottom: 0;
+    }
+
+    .projectDetails, .projectInfo {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .myImage {
+        margin-left: 30px;
+    }
+
+    #aboutMe {
+        align-items: center;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .screenshots {
+        width: 100%;
+    }
+}
