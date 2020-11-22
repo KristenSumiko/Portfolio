@@ -149,6 +149,10 @@ a:hover {
     padding-bottom: 15px;
 }
 
+.aboutProject {
+    padding-bottom: 15px;
+}
+
 @media screen and (min-width: 600px) {
     .hero section {
         display: flex;
